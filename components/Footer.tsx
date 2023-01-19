@@ -19,13 +19,17 @@ export default function Footer() {
         <p className="hidden md:block">-</p>
         <a
           href="https://www.buymeacoffee.com/justincappelle"
-          className="text-teal-500 underline font-semibold w-full sm:w-32"
+          className="text-teal-500 underline font-semibold  "
         >
           Faire un don
         </a>
         <p className="hidden md:block">-</p>
         <Link href="../cgu" className="group">
           CGU{" "}
+        </Link>
+        <p className="hidden md:block">-</p>
+        <Link href="../rgpd" className="group">
+          RGPD{" "}
         </Link>
       </div>
       <div className="flex space-x-4 pb-4 sm:pb-0">
