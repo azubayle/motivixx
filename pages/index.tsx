@@ -158,7 +158,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
+      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20 ">
         <a
           className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-600 shadow-md transition-colors hover:bg-gray-100 mb-5"
           href="https://github.com/azubayle/motivationletter-generator"
@@ -168,7 +168,7 @@ const Home: NextPage = () => {
           <Github />
           <p>Github</p>
         </a>
-        <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
+        <h1 className="sm:text-6xl text-4xl max-w-3xl font-bold text-slate-900">
           Génère ta lettre de motivation facilement
           <span className="text-teal-400">.</span>
         </h1>
@@ -179,7 +179,7 @@ const Home: NextPage = () => {
           plus pertinentes et mieux adaptées à votre profil et à vos
           compétences.
         </p>
-        <div className="max-w-xl w-full">
+        <div className="max-w-3xl w-full">
           <div className="w-full flex mt-10 items-center space-x-3">
             <div className="text-base bg-black flex items-center justify-center rounded-full h-8 w-8 text-white">
               1
