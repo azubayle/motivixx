@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.inActive{
+    @apply bg-opacity-20;
+  }
+  
+  .active{
+    @apply bg-opacity-90;
+  }
+
+
+  *{
+    font-family:'Manrope' !important
+  }

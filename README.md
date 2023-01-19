@@ -1,27 +1,15 @@
-# [TwitterBio.com](https://www.twitterbio.com/)
+# Motivix - Génère ta lettre de motivation facilement
 
-This project generates Twitter bios for you using AI.
+Motivix est un logiciel utilisant l'IA afin de vous aider à générer des lettres de motivation facilement et rapideemnt !
 
-[![Twitter Bio Generator](./public/screenshot.png)](https://www.twitterbio.com)
+https://motivix.vercel.app
 
-## How it works
+## Comment ca marche ?
 
-This project uses the [OpenAI GPT-3 API](https://openai.com/api/) (specifically, text-davinci-003) and [Vercel Edge functions](https://vercel.com/features/edge-functions) with streaming. It constructs a prompt based on the form and user input, sends it to the GPT-3 API via a Vercel Edge function, then streams the response back to the application.
+Les techologies principales utilisées sont [GPT-3 de OpenAI](https://openai.com/api/) pour générer le contenu et [Vercel](vercel.com) pour l'hébergement du site web. En remplissant les champs du formulaire, cela construit un "prompt" et nous l'envoyons ensuite à l'API de GPT-3 qui nous génère ensuite la lettre de modifications. 
 
-Video and blog post coming soon on how to build apps with OpenAI and Vercel Edge functions!
+## Run le projet en local
 
-## Running Locally
+Si vous souhaitez tester le site web en local, télécharger le dans votre environnement puis installer les dépendances (NPM INSTALL). Ensuite créé un fichier `.env.local` et remplissez le avec cette ligne de code : OPENAI_API_KEY=VOTRECLEFAPI .
 
-After cloning the repo, go to [OpenAI](https://beta.openai.com/account/api-keys) to make an account and put your API key in a file called `.env`.
-
-Then, run the application in the command line and it will be available at `http://localhost:3000`.
-
-```bash
-npm run dev
-```
-
-## One-Click Deploy
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Nutlope/twitterbio&env=OPENAI_API_KEY&project-name=twitter-bio-generator&repo-name=twitterbio)
+Lancez ensuite votre application avec `npm run dev` et vous pourrez accéder à votre site ici : `http://localhost:3000`.
