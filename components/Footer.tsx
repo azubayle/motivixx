@@ -42,7 +42,7 @@ export default function Footer() {
           </svg>
         </Link>
         <Link
-          href="https://github.com/azubayle/motivationletter-generator"
+          href="https://github.com/azubayle/motivixx"
           className="group"
         >
           <svg
