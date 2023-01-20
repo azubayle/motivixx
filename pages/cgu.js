@@ -38,7 +38,10 @@ export default function CGU() {
               En utilisant Motivix, l'Utilisateur reconnaît avoir lu, compris et
               accepté les présentes conditions générales. Si l'Utilisateur n'est
               pas d'accord avec les présentes conditions générales, il ne doit
-              pas utiliser Motivix.
+              pas utiliser Motivix. De plus, l'Utilisateur s'engage à ne pas
+              entrer de contenu offensant, choquant ou vulgaire. L'Utilisateur
+              s'engage également à n'entrer que des informations véridiques et
+              vérifiées dans les champs des différents formulaire du site.
             </p>
 
             <h2 className="text-xl"> 3. Utilisation</h2>
