@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5264325397086435"
-     crossorigin="anonymous"></script>
+     crossOrigin="anonymous"></script>
       <a
         href="https://www.buymeacoffee.com/justincappelle"
         className="fixed bottom-10 right-10 hidden lg:block"
