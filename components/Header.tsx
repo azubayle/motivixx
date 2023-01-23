@@ -18,7 +18,7 @@ export default function Header() {
       <div className="w-full sm:w-none sm:px-10 flex justify-center sm:justify-end">
         <Link
           href="/contact"
-          className="flex space-x-3  text-sm text-teal-400 underline"
+          className="flex space-x-3  text-sm text-teal-700 underline font-semibold"
         >
           Nous contacter
         </Link>

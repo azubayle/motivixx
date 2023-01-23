@@ -19,7 +19,7 @@ export default function Footer() {
         <p className="hidden md:block">-</p>
         <a
           href="https://www.buymeacoffee.com/justincappelle"
-          className="text-teal-500 underline font-semibold  "
+          className="text-teal-700 underline font-semibold  "
         >
           Faire un don
         </a>
