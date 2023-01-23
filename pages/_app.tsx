@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <img src="https://img.buymeacoffee.com/button-api/?text=Soutenir l'initiative&emoji=🤖&slug=justincappelle&button_colour=FF5F5F&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00" />
       </a>
       <Component {...pageProps} />
-      <Analytics />
+      <Analytics/>
     </>
   );
 }
