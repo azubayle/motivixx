@@ -241,7 +241,7 @@ const Home: NextPage = () => {
             <div>
               <div className="w-full flex mt-10 items-center space-x-3">
                 <label
-                  htmlFor="work"
+                  htmlFor="jours"
                   className="italic text-left font-medium cursor-pointer"
                 >
                   Durée souhaitée du stage (en jours)
