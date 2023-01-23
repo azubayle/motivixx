@@ -9,6 +9,7 @@ export default function Footer() {
           Inspiré de{" "}
           <a
             href="https://www.twitterbio.com/"
+            aria-label="Twitter Bio"
             target="_blank"
             rel="noreferrer"
             className="font-bold hover:underline transition underline-offset-2 "
@@ -18,6 +19,7 @@ export default function Footer() {
         </p>
         <p className="hidden md:block">-</p>
         <a
+          aria-label="Faire un don"
           href="https://www.buymeacoffee.com/justincappelle"
           className="text-teal-700 underline font-semibold  "
         >
@@ -33,7 +35,7 @@ export default function Footer() {
         </Link>
       </div>
       <div className="flex space-x-4 pb-4 sm:pb-0">
-        <Link href="https://twitter.com/azubayle" className="group">
+        <Link href="https://twitter.com/azubayle" className="group" aria-label="Twitter">
           <svg
             aria-hidden="true"
             className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
@@ -44,6 +46,7 @@ export default function Footer() {
         <Link
           href="https://github.com/azubayle/motivixx"
           className="group"
+          aria-label="Github"
         >
           <svg
             aria-hidden="true"
