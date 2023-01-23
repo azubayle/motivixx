@@ -8,8 +8,8 @@ const Home: NextPage = () => {
   const ResizablePanel = dynamic(() => import("../components/ResizablePanel"));
   const LoadingDots = dynamic(() => import("../components/LoadingDots"));
   const Header = dynamic(() => import("../components/Header"));
-  const Github = dynamic(() => import("../components/Github"));
   const Footer = dynamic(() => import("../components/Footer"));
+  const Github = dynamic(() => import("../components/GitHub"));
 
   const [loading, setLoading] = useState(false);
   const [name, setName] = useState("");
