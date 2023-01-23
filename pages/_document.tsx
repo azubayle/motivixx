@@ -22,7 +22,8 @@ class MyDocument extends Document {
             name="twitter:description"
             content="Génère ta lettre de motivation en quelques secondes.."
           />
- 
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5264325397086435"
+     crossOrigin="anonymous"></script>
         </Head>
         <body>
           <Main />

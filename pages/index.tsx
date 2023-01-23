@@ -1,20 +1,15 @@
 import { AnimatePresence, motion } from "framer-motion";
 import type { NextPage } from "next";
-import Head from "next/head";
+import dynamic from "next/dynamic";
 import { useState } from "react";
-import Footer from "../components/Footer";
-import Github from "../components/GitHub";
-import LoadingDots from "../components/LoadingDots";
-import dynamic from 'next/dynamic'
+import { Toaster, toast } from "react-hot-toast";
 
 const Home: NextPage = () => {
-
-  const ResizablePanel = dynamic(() => import('../components/ResizablePanel'))
-  const Header = dynamic(() => import('../components/Header'))
-  const Toaster = dynamic(() => import('react-hot-toast'))
-  const toast = dynamic(() => import('react-hot-toast'))
-
-
+  const ResizablePanel = dynamic(() => import("../components/ResizablePanel"));
+  const LoadingDots = dynamic(() => import("../components/LoadingDots"));
+  const Header = dynamic(() => import("../components/Header"));
+  const Github = dynamic(() => import("../components/Github"));
+  const Footer = dynamic(() => import("../components/Footer"));
 
   const [loading, setLoading] = useState(false);
   const [name, setName] = useState("");
@@ -28,8 +23,6 @@ const Home: NextPage = () => {
   const [degree, setDegree] = useState("");
   const [stage, setStage] = useState("Oui");
   const [jours, setJours] = useState("");
-
-  
 
   const [qualities, setQualities] = useState([
     { id: 1, title: "Rigoureux", active: false },
@@ -160,11 +153,6 @@ const Home: NextPage = () => {
 
   return (
     <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
-      <Head>
-        <title>Génère ta lettre de motivation facilement !</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20 ">
         <a
@@ -249,7 +237,7 @@ const Home: NextPage = () => {
             <div>
               <div className="w-full flex mt-10 items-center space-x-3">
                 <label
-                  htmlFor="jours"
+                  htmlFor="work"
                   className="italic text-left font-medium cursor-pointer"
                 >
                   Durée souhaitée du stage (en jours)
@@ -465,7 +453,10 @@ const Home: NextPage = () => {
                       données étant générées par une intelligence artificielle
                       encore en phase d'apprentissage, nous vous encourageons à
                       relire la lettre de motivation et à apporter des
-                      modifications si nécessaire avant de l'envoyer à un tiers. De plus, nous vons conseillons d'utiliser le résultat comme une base et d'apporter des modifications par la suite !
+                      modifications si nécessaire avant de l'envoyer à un tiers.
+                      De plus, nous vons conseillons d'utiliser le résultat
+                      comme une base et d'apporter des modifications par la
+                      suite !
                     </p>
                     <p className=" text-slate-600">
                       Pour toutes questions ou réclamations, me contacter{" "}
