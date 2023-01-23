@@ -1,12 +1,16 @@
 import { Analytics } from "@vercel/analytics/react";
 import type { AppProps } from "next/app";
+import Head from "next/head";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+    <Head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5264325397086435"
      crossOrigin="anonymous"></script>
+    </Head>
+
       <a
         href="https://www.buymeacoffee.com/justincappelle"
         className="fixed bottom-10 right-10 hidden lg:block"
