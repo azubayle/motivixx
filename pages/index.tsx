@@ -2,14 +2,20 @@ import { AnimatePresence, motion } from "framer-motion";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useState } from "react";
-import { Toaster, toast } from "react-hot-toast";
 import Footer from "../components/Footer";
 import Github from "../components/GitHub";
-import Header from "../components/Header";
 import LoadingDots from "../components/LoadingDots";
-import ResizablePanel from "../components/ResizablePanel";
+import dynamic from 'next/dynamic'
 
 const Home: NextPage = () => {
+
+  const ResizablePanel = dynamic(() => import('../components/ResizablePanel'))
+  const Header = dynamic(() => import('../components/Header'))
+  const Toaster = dynamic(() => import('react-hot-toast'))
+  const toast = dynamic(() => import('react-hot-toast'))
+
+
+
   const [loading, setLoading] = useState(false);
   const [name, setName] = useState("");
   const [work, setWork] = useState("");
@@ -22,6 +28,8 @@ const Home: NextPage = () => {
   const [degree, setDegree] = useState("");
   const [stage, setStage] = useState("Oui");
   const [jours, setJours] = useState("");
+
+  
 
   const [qualities, setQualities] = useState([
     { id: 1, title: "Rigoureux", active: false },
