@@ -14,8 +14,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       <a
         href="https://www.buymeacoffee.com/justincappelle"
         className="fixed bottom-10 right-10 hidden lg:block"
+        aria-label="Faire un don"
       >
-        <img src="https://img.buymeacoffee.com/button-api/?text=Soutenir l'initiative&emoji=🤖&slug=justincappelle&button_colour=FF5F5F&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00" />
+        <img alt="Faire un don" src="https://img.buymeacoffee.com/button-api/?text=Soutenir l'initiative&emoji=🤖&slug=justincappelle&button_colour=FF5F5F&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00" />
       </a>
       <Component {...pageProps} />
       <Analytics/>
