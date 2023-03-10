@@ -18,7 +18,7 @@ export default function RGPD() {
             <h1 className="text-2xl ">Politique de confidentialité RGPD</h1>
           </div>
           <div className="space-y-4">
-            <div className="space-y-3 mt-1 text-slate-600">
+            <div className="space-y-3 mt-1 text-zinc-300">
               <p className="">
                 Notre site Web, Motivix.vercel.app , utilise l'API de ChatGPT pour
                 générer des lettres de motivation en utilisant les informations
